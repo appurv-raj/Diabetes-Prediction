@@ -1,5 +1,10 @@
 <h1>🩺 Diabetes Prediction Web App</h1>
 
+<h2>🚀 Live Demo</h2>
+<p>
+🔗 <a href="https://diabetes-prediction-7i58.onrender.com/" target="_blank"><b>Click here to use the Diabetes Prediction Web App</b></a>
+</p>
+
 <p>
 A machine learning web application to predict diabetes risk based on medical and lifestyle inputs.<br>
 Built using <b>Python, Flask, and Logistic Regression</b>.
@@ -18,7 +23,6 @@ Built using <b>Python, Flask, and Logistic Regression</b>.
 <hr>
 
 <h2>📂 Project Structure</h2>
-
 <pre>
 ├── app.py
 ├── model.pkl
@@ -55,7 +59,6 @@ Built using <b>Python, Flask, and Logistic Regression</b>.
 
 <h2>🔮 Future Enhancements</h2>
 <ul>
-  <li>Deploy on Render / PythonAnywhere</li>
   <li>Feature importance & charts</li>
   <li>Improved UI + Authentication</li>
   <li>Streamlit version</li>
