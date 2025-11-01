@@ -17,7 +17,7 @@ Project Structure:
 ├── static/ <br>
 │   └── style.css <br>
 └── templates/ <br>
-    └── index.html
+     └── index.html
 
 Setup & Run:
 Install requirements
