@@ -12,11 +12,11 @@ Clean Flask frontend
 Model saved using Pickle (model.pkl)
 
 Project Structure:
-├── app.py
-├── model.pkl
-├── static/
-│   └── style.css
-└── templates/
+├── app.py <br>
+├── model.pkl <br>
+├── static/ <br>
+│   └── style.css <br>
+└── templates/ <br>
     └── index.html
 
 Setup & Run:
