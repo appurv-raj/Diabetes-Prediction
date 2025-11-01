@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiabetesPredict - AI-Powered Diabetes Risk Assessment</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <svg class="heartbeat-icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M16 8L20 12H24L28 16L24 20H20L16 24L12 20H8L4 16L8 12H12L16 8Z" stroke="#06b6d4" stroke-width="2" fill="none"/>
+                    <path d="M16 12V20" stroke="#06b6d4" stroke-width="2"/>
+                </svg>
+                <span class="logo-text">DiabetesPredict</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#prediction" class="nav-link">Prediction</a>
+                <a href="#privacy" class="nav-link">Privacy</a>
+                <a href="#prediction" class="btn-get-started">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="ai-badge">
+                <svg class="badge-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M8 3L10 5H12L14 8L12 11H10L8 13L6 11H4L2 8L4 5H6L8 3Z" stroke="white" stroke-width="1.5" fill="none"/>
+                </svg>
+                AI-Powered Health Assessment
+            </div>
+            <h1 class="hero-title">
+                Predict Diabetes Risk with<br>
+                <span class="gradient-text"> Machine Learning</span>
+            </h1>
+            <p class="hero-description">
+                Our state-of-the-art AI model analyzes your health data to provide accurate diabetes risk assessments. 
+                Get personalized insights in seconds with complete privacy protection.
+            </p>
+            <div class="hero-buttons">
+                <a href="#prediction" class="btn-primary">Get Your Assessment</a>
+                <a href="#features" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2 class="section-title">Why Choose DiabetesPredict?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon-box">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M16 4L20 8H24L28 12L24 16H20L16 20L12 16H8L4 12L8 8H12L16 4Z" stroke="#06b6d4" stroke-width="2" fill="none"/>
+                        <circle cx="16" cy="12" r="2" fill="#06b6d4"/>
+                    </svg>
+                </div>
+                <h3>Advanced AI</h3>
+                <p>Powered by scikit-learn machine learning models trained on extensive medical datasets</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M8 16V8C8 6.9 8.9 6 10 6H22C23.1 6 24 6.9 24 8V16" stroke="#06b6d4" stroke-width="2"/>
+                        <path d="M4 16H28V26C28 27.1 27.1 28 26 28H6C4.9 28 4 27.1 4 26V16Z" stroke="#06b6d4" stroke-width="2"/>
+                        <circle cx="16" cy="21" r="1.5" fill="#06b6d4"/>
+                    </svg>
+                </div>
+                <h3>Privacy First</h3>
+                <p>Your health data is never stored. All predictions are processed in real-time with encryption</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M6 24L10 12L14 22L20 8L26 24" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="16" cy="24" r="2" fill="#06b6d4"/>
+                    </svg>
+                </div>
+                <h3>Accurate Results</h3>
+                <p>High-precision predictions with detailed probability breakdowns</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M8 16L16 8M16 8L24 16M16 24V8" stroke="#06b6d4" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="8" cy="16" r="2" fill="#06b6d4"/>
+                        <circle cx="24" cy="16" r="2" fill="#06b6d4"/>
+                    </svg>
+                </div>
+                <h3>Instant Analysis</h3>
+                <p>Get your diabetes risk assessment in seconds with our optimized processing</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prediction Form Section -->
+    <section class="prediction-section" id="prediction">
+        <div class="form-container">
+            <h2 class="form-title">Diabetes Risk Prediction</h2>
+            <p class="form-subtitle">Complete the form below to receive your personalized diabetes risk assessment</p>
+            
+            <div class="health-info-section">
+                <h3 class="section-heading">Health Information</h3>
+                <p class="section-subheading">Please provide accurate health information for diabetes risk assessment</p>
+                
+                <div class="info-box">
+                    <svg class="info-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="9" stroke="#f59e0b" stroke-width="2"/>
+                        <path d="M10 14V10M10 6H10.01" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    This tool is for informational purposes only and does not replace professional medical advice.
+                </div>
+
+                <form action="/predict" method="POST" class="prediction-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Age (years)</label>
+                            <input type="number" name="age" step="0.1" placeholder="e.g., 45" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Glucose Level (mg/dL)</label>
+                            <input type="number" name="glucose" placeholder="e.g., 120" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>BMI (kg/m²)</label>
+                            <input type="number" name="bmi" step="0.1" placeholder="e.g., 25.5" required>
+                        </div>
+                        <div class="form-group">
+                            <label>HbA1c Level</label>
+                            <input type="number" name="hba1c" step="0.1" placeholder="e.g., 5.8" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <select name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="0">Female</option>
+                                <option value="1">Male</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Hypertension</label>
+                            <select name="hypertension" required>
+                                <option value="">Select</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Heart Disease</label>
+                            <select name="heart_disease" required>
+                                <option value="">Select</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Smoking History</label>
+                            <select name="smoking" required>
+                                <option value="">Select</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-predict">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4L16 10M16 10L10 16M16 10H4" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Predict Diabetes Risk
+                    </button>
+                </form>
+
+                {% if prediction_text %}
+                <div class="result-container">
+                    <div class="result {{ 'success' if 'No diabetes' in prediction_text or 'Low' in prediction_text else 'danger' if 'High' in prediction_text or 'diabetes' in prediction_text.lower() else 'warning' }}">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            {% if 'No diabetes' in prediction_text or 'Low' in prediction_text %}
+                            <circle cx="12" cy="12" r="10" stroke="#10b981" stroke-width="2"/>
+                            <path d="M8 12L11 15L16 9" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+                            {% else %}
+                            <circle cx="12" cy="12" r="10" stroke="#ef4444" stroke-width="2"/>
+                            <path d="M9 9L15 15M15 9L9 15" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+                            {% endif %}
+                        </svg>
+                        <div class="result-content">
+                            <h4>Assessment Result</h4>
+                            <p>{{ prediction_text }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 DiabetesPredict. All rights reserved.</p>
+            <p class="footer-note">Powered by Machine Learning</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
