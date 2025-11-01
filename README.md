@@ -1,48 +1,62 @@
-🩺 Diabetes Prediction Web App:
-A machine learning web application to predict diabetes risk based on medical and lifestyle inputs.
-Built using Python, Flask, and Machine Learning (Logistic Regression).
+<h1>🩺 Diabetes Prediction Web App</h1>
 
-✅ Features:
-ML Model trained (Accuracy: 96%)
+<p>
+A machine learning web application to predict diabetes risk based on medical and lifestyle inputs.<br>
+Built using <b>Python, Flask, and Logistic Regression</b>.
+</p>
 
-Real-time prediction from user inputs
+<hr>
 
-Clean Flask frontend
+<h2>✅ Features</h2>
+<ul>
+  <li>ML Model trained (Accuracy: <b>96%</b>)</li>
+  <li>Real-time prediction from user inputs</li>
+  <li>Clean Flask frontend</li>
+  <li>Model saved using Pickle (<code>model.pkl</code>)</li>
+</ul>
 
-Model saved using Pickle (model.pkl)
+<hr>
 
-Project Structure:<br>
-├── app.py <br>
-├── model.pkl <br>
-├── static/ <br>
-│   └── style.css <br>
-└── templates/ <br>
-     └── index.html
+<h2>📂 Project Structure</h2>
 
-Setup & Run:
-Install requirements
-pip install -r requirements.txt
+<pre>
+├── app.py
+├── model.pkl
+├── static/
+│   └── style.css
+└── templates/
+    └── index.html
+</pre>
 
-Run server:
-python app.py
+<hr>
 
-Open in browser:
-http://127.0.0.1:5000/
+<h2>🚀 Setup & Run</h2>
 
-📊 Model Info:
-Algorithm: Logistic Regression
+<p><b>Install dependencies:</b></p>
+<pre><code>pip install -r requirements.txt</code></pre>
 
-Dataset: Diabetes Prediction Dataset (Cleaned)
+<p><b>Run server:</b></p>
+<pre><code>python app.py</code></pre>
 
-80/20 Train-Test Split
+<p><b>Open in browser:</b></p>
+<pre><code>http://127.0.0.1:5000/</code></pre>
 
-Saved as model.pkl
+<hr>
 
-🔮 Future Enhancements:
-Deploy on Render / PythonAnywhere
+<h2>📊 Model Info</h2>
+<ul>
+  <li>Algorithm: <b>Logistic Regression</b></li>
+  <li>Dataset: Cleaned diabetes dataset</li>
+  <li>80/20 Train-Test Split</li>
+  <li>Saved Model: <code>model.pkl</code></li>
+</ul>
 
-Add feature importance & charts
+<hr>
 
-Add authentication & better UI
-
-Streamlit version
+<h2>🔮 Future Enhancements</h2>
+<ul>
+  <li>Deploy on Render / PythonAnywhere</li>
+  <li>Feature importance & charts</li>
+  <li>Improved UI + Authentication</li>
+  <li>Streamlit version</li>
+</ul>
