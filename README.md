@@ -11,7 +11,7 @@ Clean Flask frontend
 
 Model saved using Pickle (model.pkl)
 
-Project Structure:
+Project Structure:<br>
 ├── app.py <br>
 ├── model.pkl <br>
 ├── static/ <br>
