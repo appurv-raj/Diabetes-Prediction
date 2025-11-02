@@ -1,4 +1,4 @@
-<h1>🩺 Diabetes Prediction Web App</h1>
+<h1>🩺 DiaSense – Machine Learning Diabetes Predictor</h1>
 
 <h2>🚀 Live Demo</h2>
 <p>
